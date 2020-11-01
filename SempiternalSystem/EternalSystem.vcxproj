@@ -1,5 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <Project DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="..\packages\soil.1.16.0\build\native\soil.props" Condition="Exists('..\packages\soil.1.16.0\build\native\soil.props')" />
   <ItemGroup Label="ProjectConfigurations">
     <ProjectConfiguration Include="Debug|Win32">
       <Configuration>Debug</Configuration>
@@ -142,19 +143,33 @@
   <ItemGroup>
     <ClCompile Include="Configuration.cpp" />
     <ClCompile Include="EventRegistry.cpp" />
+    <ClCompile Include="Lib\ThreadLib.cpp" />
+    <ClCompile Include="Lib\TimeLib.cpp" />
     <ClCompile Include="Lib\WelkinException.cpp" />
+    <ClCompile Include="Lib\WelkinManager.cpp" />
     <ClCompile Include="Lib\WelkinNetwork.cpp" />
+    <ClCompile Include="Lib\WelkinVision.cpp" />
     <ClCompile Include="main.cpp" />
     <ClCompile Include="TypeParser.cpp" />
+    <ClCompile Include="Lib\WelkinObject.cpp" />
+    <ClCompile Include="Lib\WelkinEvents.cpp" />
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="Configuration.h" />
     <ClInclude Include="EventRegistry.h" />
+    <ClInclude Include="Lib\ThreadLib.h" />
+    <ClInclude Include="Lib\TimeLib.h" />
     <ClInclude Include="Lib\WelkinException.h" />
+    <ClInclude Include="Lib\WelkinManager.h" />
+    <ClInclude Include="Lib\WelkinScene.h" />
+    <ClInclude Include="Lib\WelkinVision.h" />
     <ClInclude Include="Lib\WelkinNetwork.h" />
     <ClInclude Include="Lib\WelkinString.h" />
+    <ClInclude Include="Lib\WelkinTypes.h" />
     <ClInclude Include="resource.h" />
     <ClInclude Include="TypeParser.h" />
+    <ClInclude Include="Lib\WelkinObject.h" />
+    <ClInclude Include="Lib\WelkinEvents.h" />
   </ItemGroup>
   <ItemGroup>
     <None Include="packages.config" />
@@ -170,5 +185,6 @@
     </PropertyGroup>
     <Error Condition="!Exists('..\packages\nupengl.core.redist.0.1.0.1\build\native\nupengl.core.redist.targets')" Text="$([System.String]::Format('$(ErrorText)', '..\packages\nupengl.core.redist.0.1.0.1\build\native\nupengl.core.redist.targets'))" />
     <Error Condition="!Exists('..\packages\nupengl.core.0.1.0.1\build\native\nupengl.core.targets')" Text="$([System.String]::Format('$(ErrorText)', '..\packages\nupengl.core.0.1.0.1\build\native\nupengl.core.targets'))" />
+    <Error Condition="!Exists('..\packages\soil.1.16.0\build\native\soil.props')" Text="$([System.String]::Format('$(ErrorText)', '..\packages\soil.1.16.0\build\native\soil.props'))" />
   </Target>
 </Project>

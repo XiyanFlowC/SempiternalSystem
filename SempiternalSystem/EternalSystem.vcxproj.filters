@@ -13,8 +13,11 @@
       <UniqueIdentifier>{67DA6AB6-F800-4c08-8B7A-83BB121AAD01}</UniqueIdentifier>
       <Extensions>rc;ico;cur;bmp;dlg;rc2;rct;bin;rgs;gif;jpg;jpeg;jpe;resx;tiff;tif;png;wav;mfcribbon-ms</Extensions>
     </Filter>
-    <Filter Include="Lib">
+    <Filter Include="WelkinEngine">
       <UniqueIdentifier>{2a2b6d5c-b20d-4575-a232-34c25b08f680}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="BasicLib">
+      <UniqueIdentifier>{25e0b23a-59f3-45d9-adee-c7d2d54687bf}</UniqueIdentifier>
     </Filter>
   </ItemGroup>
   <ItemGroup>
@@ -31,10 +34,28 @@
       <Filter>源文件</Filter>
     </ClCompile>
     <ClCompile Include="Lib\WelkinNetwork.cpp">
-      <Filter>Lib</Filter>
+      <Filter>WelkinEngine</Filter>
     </ClCompile>
     <ClCompile Include="Lib\WelkinException.cpp">
-      <Filter>Lib</Filter>
+      <Filter>WelkinEngine</Filter>
+    </ClCompile>
+    <ClCompile Include="Lib\WelkinObject.cpp">
+      <Filter>WelkinEngine</Filter>
+    </ClCompile>
+    <ClCompile Include="Lib\WelkinEvents.cpp">
+      <Filter>WelkinEngine</Filter>
+    </ClCompile>
+    <ClCompile Include="Lib\WelkinManager.cpp">
+      <Filter>WelkinEngine</Filter>
+    </ClCompile>
+    <ClCompile Include="Lib\WelkinVision.cpp">
+      <Filter>WelkinEngine</Filter>
+    </ClCompile>
+    <ClCompile Include="Lib\ThreadLib.cpp">
+      <Filter>BasicLib</Filter>
+    </ClCompile>
+    <ClCompile Include="Lib\TimeLib.cpp">
+      <Filter>BasicLib</Filter>
     </ClCompile>
   </ItemGroup>
   <ItemGroup>
@@ -51,13 +72,37 @@
       <Filter>头文件</Filter>
     </ClInclude>
     <ClInclude Include="Lib\WelkinException.h">
-      <Filter>Lib</Filter>
+      <Filter>WelkinEngine</Filter>
     </ClInclude>
     <ClInclude Include="Lib\WelkinNetwork.h">
-      <Filter>Lib</Filter>
+      <Filter>WelkinEngine</Filter>
     </ClInclude>
     <ClInclude Include="Lib\WelkinString.h">
-      <Filter>Lib</Filter>
+      <Filter>WelkinEngine</Filter>
+    </ClInclude>
+    <ClInclude Include="Lib\WelkinObject.h">
+      <Filter>WelkinEngine</Filter>
+    </ClInclude>
+    <ClInclude Include="Lib\WelkinTypes.h">
+      <Filter>WelkinEngine</Filter>
+    </ClInclude>
+    <ClInclude Include="Lib\WelkinManager.h">
+      <Filter>WelkinEngine</Filter>
+    </ClInclude>
+    <ClInclude Include="Lib\WelkinEvents.h">
+      <Filter>WelkinEngine</Filter>
+    </ClInclude>
+    <ClInclude Include="Lib\WelkinVision.h">
+      <Filter>WelkinEngine</Filter>
+    </ClInclude>
+    <ClInclude Include="Lib\TimeLib.h">
+      <Filter>BasicLib</Filter>
+    </ClInclude>
+    <ClInclude Include="Lib\ThreadLib.h">
+      <Filter>BasicLib</Filter>
+    </ClInclude>
+    <ClInclude Include="Lib\WelkinScene.h">
+      <Filter>WelkinEngine</Filter>
     </ClInclude>
   </ItemGroup>
   <ItemGroup>
